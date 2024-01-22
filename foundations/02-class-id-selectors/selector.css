@@ -1,16 +1,17 @@
 .odd-numbers {
     background-color: pink;
-    font-family: 'Verdana', 'DejaVu Sans', sans-serif;
+    font-family: Verdana, "DejaVu Sans", sans-serif;
 }
+/* understand when to write "font family" or font-family */
 #blue-text {
     color: blue;
     font-size: 36px;
 }
-.odd-numbers.cooler {
+.adjust-font-size {
     font-size: 24px;
 }
 #lightgreen-bg {
     background-color: lightgreen;
-    font-size: 24px;
     font-weight: bold;
 }
+/* no.4 shares the same class with no.3, need to read the README.md more carefully */
