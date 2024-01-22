@@ -1,7 +1,21 @@
-.button {
+.black,
+.yellow {
     font-size: 28px;
     font-family: Helvetica, "Times New Roman", sans-serif;
 }
+/* 
+
+## Could Be:
+Just use type selectors, not need to set a "button" class
+button {
+    font-size: 28px;
+    font-family: Helvetica, "Times New Roman", sans-serif;      
+ } 
+
+## Should Be
+According to README.md### Self Check, should use grouping selector
+
+ */
 .black {
     background-color: black;
     color: white;
