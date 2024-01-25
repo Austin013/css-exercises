@@ -12,6 +12,7 @@ body {
   font-size: 14px;
   font-weight: 800;
 }
+/* add .para before .small-para (chaining) */
 
 .para {
   font-size: 22px;
@@ -22,6 +23,7 @@ body {
   color: white;
   font-weight: bold;
 } 
+/* Add .button before .confirm (chaining) */
 
 .button {
   background-color: rgb(255, 255, 255);
@@ -34,7 +36,7 @@ body {
   font-weight: 800;
   font-size: 14px;
 }
-
+/* add .text, before .child(chaining) */
 div.text {
   color: rgb(0, 0, 0);
   font-size: 22px;
