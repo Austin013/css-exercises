@@ -6,8 +6,8 @@ body {
 .card {
   width: 400px;
   background: #fff;
-  margin: 0 auto;
-  padding: 8px;
+  margin: 16px auto;
+  padding: 8px; /* ✔️ */
 }
 
 .title {
@@ -23,15 +23,17 @@ body {
 }
 
 .button-container {
-  margin: auto;
-  padding: 16px;
-  background: #e3f4ff;i
+  /* margin: auto; */
+  text-align: center; /* text-align */
+  padding: 8px; /* 16 -> 8 */
+  background: #e3f4ff;
 }
 
 button {
-  margin: auto;
-  display: block;
+  margin: 0 auto; /* missing the "0" */
+  display: block; /* ✔️ */
   background: white;
   border: 1px solid #eee;
-  padding: 8px 24px 8px 24px;
+  padding: 8px 24px 8px 24px; /* "8px 24px" is simpler */
+  
 }
