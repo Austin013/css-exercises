@@ -16,10 +16,13 @@ body {
   padding: 8px;
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  /* solution: align-items: center; <- this is not needed */
   /* answer */
 }
-/* answer */
+/* answer
+ 1. grouping the selector share the same properties
+ 2. justify-content is on the Main Axis, so it's not needed; only align-items is needed
+
 .left {
   display: flex;
   align-items: center;
@@ -31,7 +34,14 @@ body {
   justify-content: right;
   gap: 12px;
 }
-/* answer */
+ answer */
+/* solution */
+.left, .right {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+/* solution */
 .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
@@ -67,6 +77,7 @@ ul {
   gap: 12px;
   display: flex;
   padding: 0;
-  margin-left: 12px;
+  /* solution */ margin: 0; /* solution */
+  /*solution: margin-left: 12px; -> add gap: 16; to left & right items */
   /* answer */
 }
