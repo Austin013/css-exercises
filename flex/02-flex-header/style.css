@@ -1,6 +1,12 @@
 .header  {
   font-family: monospace;
   background: papayawhip;
+  /* answer */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 8px;
+  /* answer */
 }
 
 .logo {
@@ -9,11 +15,19 @@
   color: tomato;
   background: white;
   padding: 4px 32px;
+/* answer */
+  align-self: center;
+/* answer */
 }
 
 ul {
   /* this removes the dots on the list items*/
   list-style-type: none;
+  /* answer */
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  /* answer */
 }
 
 a {
@@ -23,3 +37,5 @@ a {
   /* this removes the line under the links */
   text-decoration: none;
 }
+
+/* 1. can't figure out why there is a padding-inline-start in ul */
