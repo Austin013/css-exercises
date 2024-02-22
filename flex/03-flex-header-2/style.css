@@ -12,8 +12,26 @@ body {
   background: white;
   border-bottom: 1px solid #ddd;
   box-shadow: 0 0 8px rgba(0,0,0,.1);
+  /* answer */
+  padding: 8px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  /* answer */
 }
-
+/* answer */
+.left {
+  display: flex;
+  align-items: center;
+  justify-content: left;
+}
+.right {
+  display: flex;
+  align-items: center;
+  justify-content: right;
+  gap: 12px;
+}
+/* answer */
 .profile-image {
   background: rebeccapurple;
   box-shadow: inset 2px 2px 4px rgba(0,0,0,.5);
@@ -45,4 +63,10 @@ a {
 
 ul {
   list-style-type: none;
+  /* answer */
+  gap: 12px;
+  display: flex;
+  padding: 0;
+  margin-left: 12px;
+  /* answer */
 }
