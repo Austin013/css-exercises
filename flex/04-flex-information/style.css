@@ -1,31 +1,45 @@
 body {
   font-family: 'Courier New', Courier, monospace;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  text-align: center; /* text align can be used here will also apply to title */
 }
 
 img {
   width: 100px;
   height: 100px;
 }
-.items {
+
+.items { /* solution's .container */
   margin-top: 32px;
-  display: flex;
-  flex-direction: row;
-  gap: 52px;
+  display: flex; /* √, but this needs to be at the top */
+  justify-content: center; /* the default is horizontal, so only need to justify-content */
+   /* = solution's
+    .title {
+    margin-bottom: 32px;
+  } 
+  */
+  /* flex-direction: row; the default is already horizontal */
+  gap: 52px; /* √ */
 }
+
+/* 
+by giving the same class to each item, and set the max width, the solution's code becomes simpler
 
 .text {
   width: 200px;
   text-align: center;
 }
 
-.barberry, .chili, .pepper, .saffron {
-  display: flex;
-  flex: 0 auto;
-  flex-direction: column;
-  align-items: center;
+*/
+
+.barberry, .chili, .pepper, .saffron { /* just use the same name for each */
+  /* display: flex; */
+  /* flex: 0 auto; */
+  /* flex-direction: column; */
+  /* align-items: center; */
+  max-width: 200px; /* set the items' (info) width instead of text */
 }
 
 .title {
@@ -45,3 +59,11 @@ img {
   justify-content: center;
   background: #eee;
 }
+
+/* note:
+  1. By giving the "text-align: center;" to .body, the title will be in the center; also centered the text for items
+  2. If not too complicated, each item should share the same class
+  3. I use 2 flexes, while the solution only uses 1
+  4. Pay attention to the orders of the properties
+  
+*/
