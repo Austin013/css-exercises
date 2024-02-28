@@ -11,8 +11,6 @@ body {
   color: #333;
   /* I'll give you this one for free lol */
   display: flex;
-  flex:auto;
-  flex-shrink: 1;
   align-items: center;
   justify-content: center;
 }
@@ -72,4 +70,25 @@ button.cancel {
 }
 
 /* answer */
+.modal {
+  padding: 16px;
+  display: flex;
+  /* justify-content: space-between; <- This is not need  */
+  gap: 16px;
+}
 
+.icon {
+  flex-shrink: 0;
+}
+
+.header {
+  font-size: 24px;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.text {
+  margin: 16px 0px 16px 0;
+}
