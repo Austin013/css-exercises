@@ -23,7 +23,7 @@ input {
   border-radius: 16px;
   padding: 8px 24px;
   width: 400px;
-  margin-bottom: 16px;
+  /* margin-bottom: 16px -> no need */
 }
 
 /* answer */
@@ -31,51 +31,84 @@ input {
 body {
   display: flex;
   flex-direction: column;
-  align-items: center;
-  justify-content: space-between;
+  /* align-items: center; -> no need */
+  /* justify-content: space-between; -> no need  */
 }
 
 /* remove bullets from li */
 ul {
   display: flex;
-  flex-shrink: 0;
-  justify-content: space-between;
-  align-items: center;
+  /* flex-shrink: 0; no need */
+  /* justify-content: space-between; no need */
+  /* align-items: center; no need */
   list-style-type: none;
   margin: 0;
   padding: 0;
+  gap: 16px; /* spacing */
 }
 
-li {
-  padding: 8px;
+/* for the aesthetic */
+a {
+  color: #666;
+  text-decoration: none;
 }
 
-.header {
+/* no need
+  li {
+    padding: 8px;
+  } 
+*/
+
+/* I forgot to group again */
+
+  /* 
+  notes: 
+    1. They can be combined if they share a lot of same properties
+    2. width: 100%; -> no need
+
+  .header {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding: 24px;
+  }
+
+  .footer {
+    width: 100%;
+    background-color: #eee;
+    padding: 24px;
+    display: flex;
+    justify-content: space-between;
+  } */
+
+.header, 
+.footer {
   display: flex;
   justify-content: space-between;
-  width: 100%;
-  padding: 24px;
+  padding: 16px;
 }
 
+.footer {
+  background-color: #eee;
+}
+
+/* I forgot to group again */
+
 .content {
+  flex: 1;
+  /* 
+    by applying this can save the properties from body,
+    align-items: center;
+    justify-content: space-between;
+  */
   display: flex;
+  justify-content: center; /* missed */
   flex-direction: column;
   align-items: center;
   gap: 8px;
 }
 
+/* √ */
 button {
   padding: 8px 16px;
 }
-
-.footer {
-  width: 100%;
-  background-color: #eee;
-  padding: 24px;
-  display: flex;
-  justify-content: space-between;
-}
-
-/* ＊problems
-
-*/
