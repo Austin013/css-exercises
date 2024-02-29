@@ -29,50 +29,72 @@ body {
 }
 
 /* answer */
+
+/* because not using <p> this time, so comment this out
 .header, .footer {
   display: flex;
   align-items: center;
   flex-shrink: 0;
+} 
+*/
+
+.header { 
+  display: flex;
+  align-items: center;
+  font-size: 32px;
+  font-weight: 900;
+  padding: 0 16px; /* the way to add padding/margin to left & right/top & bottom*/
 }
 
-.footer {
+.footer { /* √ */
+  display: flex;
+  align-items: center;
   justify-content: center;
 }
-
-.header p {
+/*  could be done it without <p>
+.header p { 
   margin-left: 16px;
   padding: 0;
   font-size: 32px;
   font-weight: 960;
-}
+} */
 
-body {
+
+body { /* √ */
   display: flex;
   flex-direction: column;
 }
 
-.container {
+.container { /* √ */
   display: flex;
   flex: 1;
 }
 
 /* sidebar */
-.sidebar {
+
+.sidebar { /* √ */
   flex-shrink: 0;
   padding: 16px;
 }
 
 ul {
   list-style-type: none;
-  display: flex;
-  flex-direction: column;
-  justify-content: left;
-  gap: 24px;
+  /* display: flex; */
+  /* flex-direction: column; just add margins to <li>*/
+  /* justify-content: left; just add margins to <li>*/
+  /* gap: 24px; just add margins to <li> */
+  margin: 0;
+  padding: 0;
 }
 
-a {
+li {
+  margin-bottom: 16px;
+}
+
+a { /* √ */
   text-decoration: none;
   color: white;
+  font-size: 24px; /* This is what the line 30 is talking about*/
 }
 
 /* card section */
@@ -80,11 +102,16 @@ a {
   display: flex;
   flex-wrap: wrap;
   padding: 32px;
-  gap: 32px;
+  /* gap: 32px;  Add margins to card*/
 }
 
 .card {
   width: 360px;
-  height: 240px;
+  /* height: 240px;  */
   padding: 32px;
+  margin: 16px;
 }
+
+/* note:
+  💡Reasons to remove the height of card  - When the viewport is smaller, the height well be allowed to adapt to the screen more coherently.
+*/
